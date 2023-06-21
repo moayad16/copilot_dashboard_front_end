@@ -1,0 +1,46 @@
+.home {
+    min-height: 100%;
+    background-color: #161d20;
+    padding-top: 4rem;
+}
+
+.home .pageTitle {
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #ffeb3b;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    font-style: italic;
+    position: relative;
+    z-index: 99;
+
+}
+
+.home .divider-img {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.home .divider-img path {
+    fill: #263238;
+}
+
+.home .row {
+    max-width: 100%;
+    position: relative;
+    z-index: 99;
+    margin-left: 0;
+
+}
+
+.home .row .col-lg-3 {
+    min-height: 20rem;
+    opacity: 0.85;
+    margin-bottom: 1.5rem;
+}

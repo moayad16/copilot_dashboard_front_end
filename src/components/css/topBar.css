@@ -1,0 +1,86 @@
+.topBar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white !important;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.738);
+  z-index: 99999999999;
+}
+
+.topBar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  color: black;
+  background-color: #161d20 !important;
+}
+
+.topBar nav .container-fluid {
+    padding: 0;
+}
+
+.topBar nav .container-fluid .topBarHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+.topBar nav .container-fluid .logoHeader {
+  margin-left: 1rem;
+  height: 100%;
+  color: #ffeb3b;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.topBar nav .container-fluid .buttonTest {
+  background-color: #ffeb3b !important;
+  margin-right: 1rem;
+}
+
+.topBar nav .container-fluid .buttonTest span {
+  color: red !important;
+}
+
+.topBar nav .collapse ul {
+    background-color: #161d20 !important;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.topBar nav .collapse .clicked {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.738);
+    transition: 0.2s;
+}
+
+.topBar nav .collapse ul li {
+    transition: inherit;
+}
+
+.topBar nav .collapse ul button {
+  background-color: inherit;
+  font-family: "Oswald", sans-serif;
+  height: 4rem;
+  color: white;
+  width: 100px;
+  margin-left: 1rem;
+  border: none;
+  font-weight: bolder;
+}
+
+.topBar nav .collapse ul button:hover {
+  border-bottom: 5px solid white;
+  transition: 0.2s;
+}
+
+.topBar nav .collapse ul .selected {
+    border-bottom: 5px solid #ffeb3b;
+    transition: 0.2s;
+}

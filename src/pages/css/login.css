@@ -1,0 +1,128 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #263238;
+}
+
+.login .loginCont {
+  width: 800px;
+  height: 583.797px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login .loginCont .left {
+  position: relative;
+  background-color: #161d20;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.login .loginCont .left img {
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  top: 25%;
+  left: 150%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+}
+.login .loginCont .left .logoTitle {
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+  color: #ffeb3b;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+}
+
+.shapedividers_com-8946 {
+  overflow: hidden;
+  position: relative;
+  background-color: #1a237e;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.shapedividers_com-8946::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 336px 186%;
+  background-position: 0% 50%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.17 35.28" preserveAspectRatio="none"><path d="M1 35.28c.8-3.17-.38-7.3-.55-10.04-.17-2.76 1.47-9.25 1.3-12.68C1.58 9.14.91 7.92.88 5.52.86 3.12 1.76 0 1.76 0H0v35.28z" fill="%23161d20"/></svg>');
+}
+
+.login .loginCont .loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  right: 0;
+  padding: 50px;
+  background-color: inherit;
+  height: 100%;
+  width: 60%;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.login .loginCont .loginForm .loginTitle {
+  position: absolute;
+  top: 10%;
+  left: 39%;
+  font-weight: bolder;
+}
+
+.login .loginCont .loginForm input {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.login .loginCont .loginForm input:focus {
+  outline: none !important;
+}
+
+.login .loginCont .loginForm button {
+  width: 100%;
+  background-color: #161d20;
+  color: white;
+  border: none;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.login .loginCont .loginForm button:focus {
+  outline: none;
+}
+
+.login .loginCont .loginForm button:hover {
+  background-color: #263238;
+  transition: 0.2s;
+  border: 0.5px solid white;
+}
