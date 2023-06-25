@@ -12,7 +12,7 @@ export default function RandomForestParams(props) {
                         <label for="exampleFormControlSelect1">Number of Estimators</label>
                         <input onChange={(e) => props.setModel({...props.model, NEstimators: e.target.value})} type="number" className="form-control" id="trainAndTestSizes" placeholder="100"/>
                         <label for="trainAndTestSizes">Max Depth</label>
-                        <input onChange={(e) => props.setModel({...props.model, MaxDepth: e.target.value})} type="number" className="form-control" id="trainAndTestSizes" placeholder="None"/>
+                        <input onChange={(e) => props.setModel({...props.model, MaxDepth: e.target.value})} type="number" className="form-control" id="trainAndTestSizes" placeholder="1"/>
                     </div>
                     <div className="col-lg-6">
                         <label for="exampleFormControlSelect1">Criterion</label>

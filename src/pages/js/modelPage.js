@@ -26,7 +26,7 @@ export default function ModelPage() {
       C: 1.0,
       n_estimators: 100,
       criterion: "gini",
-      max_depth: "None",
+      max_depth: 1,
       n_jobs: -1,
       NNeighbors: 5,
       weights: "uniform",
@@ -41,7 +41,7 @@ export default function ModelPage() {
       accuracy: 0,
       precision: 0,
       f1_score: 0,
-      confusion_matrix: [[0, 0], [0, 0]]
+      confusion_matrix: [[0, 0], [0, 0]],
     });
 
     const [state, setState] = useState("none")
@@ -99,15 +99,6 @@ export default function ModelPage() {
                 state==="loading" ? <Loading/> : 
                 state==="done" ? <ResultsSection results={results}/> : null}
 
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 animate__animated animate__fadeInRight">
-            <div className="modelResults results">
-              <h1>ROC</h1>
-              <div className="resBody">
-                {state==="none" ? <p>Click on Train Model to see the ROC of your model.</p> : 
-                state==="loading" ? <Loading/> : null}
               </div>
             </div>
           </div>
