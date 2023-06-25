@@ -1,12 +1,14 @@
 import React, {useState} from "react";
 import '../css/topBar.css'
 import { useLocation } from "react-router-dom/dist";
+import { Link } from "react-router-dom/dist";
 
 export default function TopBar() {
 
     const [isExpanded, setIsExpanded] = useState(false);
     const location = useLocation();
     const currentUrl = location.pathname;
+
 
     return (
       <div className="topBar">
@@ -41,15 +43,26 @@ export default function TopBar() {
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className={(isExpanded)? "navbar-nav ml-auto clicked" : "navbar-nav ml-auto"}>
+                <Link to='/dashboard'>
                 <li class="nav-item">
                   <button className={currentUrl === '/dashboard'? "nav-link selected" : 'nav-link'}>Dashboard</button>
                 </li>
+                </Link>
+                <Link to='/map'>
+                <li class="nav-item">
+                    <button className={currentUrl === '/map'? "nav-link selected" : 'nav-link'}>Map</button>
+                </li>
+                </Link>
+                <Link to='/data'>
                 <li class="nav-item">
                   <button className={currentUrl === '/data'? "nav-link selected" : 'nav-link'}>Data</button>
                 </li>
+                </Link>
+                <Link to='/model'>
                 <li class="nav-item">
                   <button className={currentUrl === '/model'? "nav-link selected" : 'nav-link'}>New Model</button>
                 </li>
+                </Link>
               </ul>
             </div>
           </div>

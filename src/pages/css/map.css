@@ -1,0 +1,30 @@
+.map {
+    min-height: 100vh;
+    background-color: #161d20;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map .mapTitle {
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #ffeb3b;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    font-style: italic;
+}
+
+.mapCont {
+    background-color: black;
+    border-radius: 15px;
+    height: 90vh;
+    width: 98vw;
+    margin-bottom: 5rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}

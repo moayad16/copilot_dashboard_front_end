@@ -1,0 +1,30 @@
+.resultsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.resultsSection .row {
+    width: 100%;
+    margin: 0;
+}
+
+.resultsSection label {
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: "Oswald", sans-serif;
+    color: #ffeb3b;
+    text-align: left;
+}
+
+.resultsSection .col-lg-6 p {
+    margin-bottom: 2rem !important;
+}
+
+.resultsSection .col-lg-6 .confP {
+    margin-bottom: 0.5rem !important;
+}

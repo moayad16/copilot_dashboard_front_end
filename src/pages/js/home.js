@@ -1,13 +1,35 @@
-import React from "react";
+import React,  {useEffect} from "react";
 import '../css/home.css'
 import 'animate.css'
 import VizChart from "../../components/js/chart";
+import ax from "../../utils/requestTemplate";
+import { useNavigate } from "react-router-dom/dist";
+import "animate.css"
 
 
 export default function Home() {
+
+    let token = localStorage.getItem("token");
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        ax.post('/validateToken', {token: token})
+        .then((res) => {
+            if (res.status === 200) {
+
+            }
+        })
+        .catch((err) => {
+            if (err.response.status === 401) {
+                navigate("/")
+            }
+        })
+    },[])
+
+
     return (
       <div className="home">
-        <h1 className="pageTitle">
+        <h1 className="pageTitle animate__animated animate__fadeInLeft">
             Dashboard
         </h1>
         <div className="row">

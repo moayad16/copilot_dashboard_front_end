@@ -20,14 +20,15 @@ export default function Login() {
         console.log(res);
         if (res.status === 200){
             localStorage.setItem("token", res.data.token);
+            console.log(res.data.token);
             navigate("/dashboard");
         }
         else{
-            alert(res.data.message)
+            alert("Wrong Credentials")
         }
     })
     .catch(err =>{
-        console.log(err);
+      alert("Wrong Credentials")
     })
   };
 

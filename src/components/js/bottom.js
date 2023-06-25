@@ -9,7 +9,7 @@ export default function Bottom() {
                 Developed by Moayad Emad & Amr Magdy
             </p>
             <p>
-                lorem ipsum dolores sicht mit ackhmed
+                As a part of the Graduation Project
             </p>
         </div>
     )

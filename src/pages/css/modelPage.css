@@ -1,0 +1,96 @@
+.modelPage {
+  min-height: 100vh;
+  background-color: #161d20;
+  padding-top: 5rem;
+}
+
+.modelPage .modelTitle {
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #ffeb3b;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  font-style: italic;
+}
+
+.modelPage .train {
+  background-color: #ffeb3b;
+  color: black;
+  border-radius: 10px;
+  width: 200px;
+  padding: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  z-index: 99;
+  text-decoration: none;
+  border: none;
+  position: absolute;
+  z-index: 99;
+  right: 2rem;
+  top: 10rem;
+  cursor: pointer;
+}
+
+.modelPage .train:hover {
+    background-color: #fff495;
+}
+
+.modelPage .row {
+  position: relative;
+  z-index: 99;
+  max-width: 100%;
+  min-height: 15rem;
+  margin: 0;
+}
+
+.modelPage .row .col-lg-6 {
+  margin-bottom: 1.5rem;
+}
+
+.modelPage .modelCont .modelSettings,
+.modelPage .modelCont .modelResults {
+  border-radius: 15px;
+  min-height: 100%;
+  opacity: 0.85;
+  background-color: #161d20;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px,
+    rgba(0, 0, 0, 0.5) 0px -12px 30px, rgba(0, 0, 0, 0.5) 0px 4px 6px,
+    rgba(0, 0, 0, 0.25) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 1rem;
+}
+
+.modelPage .modelCont .modelSettings h1,
+.modelPage .modelCont .modelResults h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  color: #ffeb3b;
+  text-align: left;
+}
+
+.modelPage .modelCont .results .resBody {
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modelPage .modelCont .results p {
+    color: white;
+    margin: auto;
+}
+
+.modelPage .divider-img {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.modelPage .divider-img path {
+  fill: #263238;
+}
