@@ -43,22 +43,17 @@ export default function TopBar() {
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className={(isExpanded)? "navbar-nav ml-auto clicked" : "navbar-nav ml-auto"}>
-                <Link to='/dashboard'>
+                <Link to='/dashboard' style={{ textDecoration: 'none' }}>
                 <li class="nav-item">
-                  <button className={currentUrl === '/dashboard'? "nav-link selected" : 'nav-link'}>Dashboard</button>
+                  <button className={currentUrl === '/dashboard'? "nav-link selected" : 'nav-link'}>Data</button>
                 </li>
                 </Link>
-                <Link to='/map'>
+                <Link to='/map' style={{ textDecoration: 'none' }}>
                 <li class="nav-item">
                     <button className={currentUrl === '/map'? "nav-link selected" : 'nav-link'}>Map</button>
                 </li>
                 </Link>
-                <Link to='/data'>
-                <li class="nav-item">
-                  <button className={currentUrl === '/data'? "nav-link selected" : 'nav-link'}>Data</button>
-                </li>
-                </Link>
-                <Link to='/model'>
+                <Link to='/model' style={{ textDecoration: 'none' }}>
                 <li class="nav-item">
                   <button className={currentUrl === '/model'? "nav-link selected" : 'nav-link'}>New Model</button>
                 </li>

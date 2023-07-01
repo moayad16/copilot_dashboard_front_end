@@ -45,8 +45,22 @@
   margin: 0;
 }
 
+.modelPage .row .col-lg-3,
 .modelPage .row .col-lg-6 {
   margin-bottom: 1.5rem;
+}
+
+.modelPage .row .col-lg-3 {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+}
+
+.modelPage .row .col-lg-3 .result {
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  color: #ffeb3b;
 }
 
 .modelPage .modelCont .modelSettings,

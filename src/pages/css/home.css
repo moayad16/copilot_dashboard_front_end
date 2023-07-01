@@ -1,46 +1,85 @@
 .home {
-    min-height: 100%;
-    background-color: #161d20;
-    padding-top: 4rem;
+  min-height: 89%;
+  background-color: #161d20;
+  padding-top: 4rem;
 }
 
 .home .pageTitle {
-    text-align: left;
-    font-family: "Oswald", sans-serif;
-    font-weight: bolder;
-    font-size: 2rem;
-    color: #ffeb3b;
-    margin-left: 2rem;
-    margin-bottom: 3rem;
-    margin-top: 5rem;
-    font-style: italic;
-    position: relative;
-    z-index: 99;
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #ffeb3b;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  font-style: italic;
+  position: relative;
+  z-index: 99;
+}
 
+.home .dataRow {
+  min-height: 30vh;
+}
+
+.home .row .dataCont {
+  border-radius: 15px;
+  min-height: 100%;
+  opacity: 0.85;
+  background-color: #161d20;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px,
+    rgba(0, 0, 0, 0.5) 0px -12px 30px, rgba(0, 0, 0, 0.5) 0px 4px 6px,
+    rgba(0, 0, 0, 0.25) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 1.5rem;
+  color: white;
+}
+
+.home .row .dataCont h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.home .row .dataCont .row {
+  margin-top: 2rem;
+  text-align: left;
+  border-bottom: 0.5px dashed #ffeb3b;
+  padding-bottom: 10px;
+}
+
+.home .row .dataCont .row button {
+  background-color: #ffeb3b;
+  color: black;
+  border-radius: 5px;
+  width: 200px;
+  padding: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.home .row .dataCont .row button:hover {
+  background-color: #fff495;
 }
 
 .home .divider-img {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
 
 .home .divider-img path {
-    fill: #263238;
+  fill: #263238;
 }
 
 .home .row {
-    max-width: 100%;
-    position: relative;
-    z-index: 99;
-    margin-left: 0;
-
-}
-
-.home .row .col-lg-3 {
-    min-height: 20rem;
-    opacity: 0.85;
-    margin-bottom: 1.5rem;
+  max-width: 100%;
+  position: relative;
+  z-index: 99;
+  margin-left: 0;
 }
